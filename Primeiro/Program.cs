@@ -62,7 +62,14 @@ namespace Primeiro
 
             double y = x ?? 5.0;// y = x se x não for null, senão y = 5
 
-            Console.WriteLine(y.ToString());
+            Console.WriteLine($"y antes de alteração é : {y.ToString()}");
+
+            Console.Write("Digite um valor para x: ");
+            x = double.Parse(Console.ReadLine());
+
+            y = x ?? 5.0;
+
+            Console.WriteLine($"y após alteração é : {y.ToString()}");
 
             Console.ReadKey();
         }
