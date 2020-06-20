@@ -56,11 +56,13 @@ namespace Primeiro
             Console.WriteLine("");
             Console.WriteLine("-------------------------------------------------------------");
             Console.WriteLine("");
-            Console.WriteLine("Nullables");
+            
 
             double? x = null;//sinal de ? indica que é nullable (pode aceitar null)
 
             double y = x ?? 5.0;// y = x se x não for null, senão y = 5
+
+            Console.WriteLine("Nullables");
 
             Console.WriteLine($"y antes de alteração é : {y.ToString()}");
 
